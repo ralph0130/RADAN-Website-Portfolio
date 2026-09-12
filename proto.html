@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+
+    <div class="navbar">
+      <div class="icon">
+        <img src="RADAN Log.png" alt="Logo">
+
+      </div>
+
+      <div class="nav-nu">
+        <ul>
+          <li><a href="#initial">HOME</a></li>
+          <li><a href="#purpose">ABOUT</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#streaming">CONTENT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="search">
+        <input id="searchInput" class="text" type="search" name="" placeholder="Search...">
+        <button id="searchBtn" class="btn" type="button">Search</button>
+      </div>
+
+    </div>
+    <div class="content">
+      <h1>LEARN AND CREATE</h1>
+      <h2 class="h2">ONE STREAM AT A TIME</h2>
+      <p class="para">Exploring how educational streaming can make learning clearer, more engaging, and easier to
+        understand.</p>
+
+      <button id="btn1" class="btn1">EXPLORE OUR JOURNEY!</button>
+
+    </div>
+
+    <div class="hero-video-wrap">
+      <video class="hero-video" autoplay muted loop playsinline controls>
+        <source src="intro-5.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="section-head">
+    <span id="initial" aria-hidden="true"></span>
+    <h2 id="featuresfirst">Features First</h2>
+    <h1> Starter questions!</h1>
+
+    <div class="questions-layout">
+      <div class="questions-column">
+        <div class="faq-item">
+          <h3> What is this website about?</h3>
+          <p id="answer1" class="answer"> This website is about providing comprehensive resources and tutorials on
+            programming
+            essentials and the introduction of
+            streaming. The site will help you understand the basics of JavaScript, with the use of streaming or embedded
+            videos. But if you want original content, you may go ahead and browse our website, there's more content
+            below!
+          </p>
+          <button onclick="toggleAnswer('answer1', this)">Read More</button>
+        </div>
+
+        <div class="faq-item">
+          <h3> What will I learn from browsing this website?</h3>
+          <p id="answer2" class="answer"> You can learn all sorts of tutorials from us! Especially how to integrate
+            streaming
+            or what you've learned from our streams
+            into your websites! As of 11/9/2026, we want to have our content focus on sharing what we learn about
+            JavaScript.
+          </p>
+          <button onclick="toggleAnswer('answer2', this)">Read More</button>
+        </div>
+
+        <div class="faq-item">
+          <h3> Why should I browse this website?</h3>
+          <p id="answer3" class="answer"> You should choose this reliable webpage because it is informative, reliable
+            and
+            user-friendly. At most, our team has designed this website for learners like you to feel encouraged, safe,
+            and
+            related to understanding this revolutionary programming language.
+
+            <br> <br>We want to help you learn JavaScript and streaming in a fun and interactive way, so you can apply
+            your
+            knowledge to your
+            projects!
+          </p>
+          <button onclick="toggleAnswer('answer3', this)">Read More</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="abt" id="purpose">
+    <div class="abt-header">
+      <h2>About / Purpose</h2>
+    </div>
+
+    <div class="purpose-grid">
+      <div class="purpose-card">
+        <h3>Who this website is for</h3>
+        <p>This website is designed for beginners, students, and curious learners who want to understand JavaScript and
+          streaming in a simple, friendly way.</p>
+      </div>
+
+      <div class="purpose-card">
+        <h3>What you can expect to learn</h3>
+        <p>You can expect clear explanations, beginner-friendly examples, and helpful guidance on how JavaScript
+          supports modern web development and digital content.</p>
+      </div>
+
+      <div class="purpose-card">
+        <h3 id="Mission">Our Mission</h3>
+        <p>To make learning JavaScript and streaming more approachable, practical, and inspiring for everyday learners
+          and future creators.</p>
+      </div>
+
+      <div class="purpose-card">
+        <h3 id="Vision">Our Vision</h3>
+        <p>To build a learning space where students can grow confident, creative, and ready to explore the world of
+          coding and online media.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="headline" id="streaming">
+    <div class="headline-inner">
+      <div class="headline-copy">
+        <h2>Featured Content</h2>
+        <p class="list-intro">These are the projects you will meet </p>
+
+        <div class="content-list-group">
+          <h3>Project Planning</h3>
+          <ul id="project-list" class="content-list project-list list-collapsed">
+            <li>Your streaming topic or content</li>
+            <li>Your target audience</li>
+            <li>Viewer needs</li>
+            <li>Characteristics of a good stream</li>
+            <li>Your research journey</li>
+            <li>What steps your group took</li>
+            <li>How your ideas developed</li>
+            <li>How you arrived at your final content decision</li>
+          </ul>
+          <button class="list-toggle" type="button" aria-controls="project-list" aria-expanded="false"
+            onclick="toggleContentList('project-list', this)">See More</button>
+        </div>
+
+        <div class="content-list-group">
+          <h3>Streaming Research</h3>
+          <ul id="research-list" class="content-list research-list list-collapsed">
+            <li>Definition of streaming</li>
+            <li>Types of streaming content</li>
+            <li>Platforms used</li>
+            <li>Audience analysis</li>
+            <li>Viewer needs</li>
+            <li>Characteristics of a good stream</li>
+          </ul>
+          <button class="list-toggle" type="button" aria-controls="research-list" aria-expanded="false"
+            onclick="toggleContentList('research-list', this)">See More</button>
+        </div>
+      </div>
+
+      <div class="carousel-section">
+        <div class="carousel" aria-label="Featured photo carousel">
+          <button class="carousel-btn prev" type="button" aria-label="Previous slide">❮</button>
+
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <article class="slide active">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Laptop with JavaScript code on screen">
+                <div class="slide-caption">
+                  <span>JavaScript Tutorials</span>
+                  <h3>Learn the basics of JavaScript</h3>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                  alt="Coding workspace with computer and notebook">
+                <div class="slide-caption">
+                  <span>Streaming Learning</span>
+                  <h3>Use video lessons to build confidence</h3>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="discuss.png" alt="Students working together on a project">
+                <div class="slide-caption">
+                  <span>Team Projects</span>
+                  <h3>Practice with real examples and teamwork</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel-btn next" type="button" aria-label="Next slide">❯</button>
+        </div>
+
+        <div class="carousel-dots" aria-label="Carousel navigation">
+          <button class="dot active" type="button" aria-label="Go to slide 1"></button>
+          <button class="dot" type="button" aria-label="Go to slide 2"></button>
+          <button class="dot" type="button" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="portfolio" id="portfolio" aria-labelledby="team-portfolio-title">
+    <div class="team-portfolio-header">
+      <span>RADAN TEAM</span>
+      <h1 id="team-portfolio-title">TEAM PORTFOLIO</h1>
+      <p>Meet the people behind our research, content, and final project.</p>
+    </div>
+
+    <div class="team-portfolio-carousel" aria-label="Team portfolio carousel">
+      <button class="team-portfolio-btn portfolio-prev" type="button"
+        aria-label="Previous team portfolio">&#10094;</button>
+
+      <div class="team-portfolio-viewport">
+        <div class="team-portfolio-track">
+          <article class="team-portfolio-slide active" aria-hidden="false">
+            <div class="team-portfolio-copy">
+              <span class="team-portfolio-number">01 / 05</span>
+              <h2>Ralph Axel M Sagun</h2>
+              <p class="team-portfolio-role">Spokesperson</p>
+
+            </div>
+            <div class="team-portfolio-image-wrap">
+              <img src="ralportfo.png" alt="Portfolio of Ralp Axel M Sagun, spokesperson">
+              <button class="portfolio-view-button" type="button">View larger</button>
+            </div>
+          </article>
+
+          <article class="team-portfolio-slide" aria-hidden="true">
+            <div class="team-portfolio-copy">
+              <span class="team-portfolio-number">02 / 05</span>
+              <h2>Daryn Ann Bofill</h2>
+              <p class="team-portfolio-role">Facilitator</p>
+
+            </div>
+            <div class="team-portfolio-image-wrap">
+              <img src="daryn.png" alt="Portfolio of Daryn Ann Bofill, facilitator">
+              <button class="portfolio-view-button" type="button">View larger</button>
+            </div>
+          </article>
+
+          <article class="team-portfolio-slide" aria-hidden="true">
+            <div class="team-portfolio-copy">
+              <span class="team-portfolio-number">03 / 05</span>
+              <h2>Nisha De Luna</h2>
+              <p class="team-portfolio-role">Scribe</p>
+
+            </div>
+            <div class="team-portfolio-image-wrap">
+              <img src="nisha.png" alt="Portfolio of Nisha De Luna, scribe">
+              <button class="portfolio-view-button" type="button">View larger</button>
+            </div>
+          </article>
+
+          <article class="team-portfolio-slide" aria-hidden="true">
+            <div class="team-portfolio-copy">
+              <span class="team-portfolio-number">04 / 05</span>
+              <h2>Al Rajhi Saidal</h2>
+
+            </div>
+            <div class="team-portfolio-image-wrap">
+              <img src="raj.png" alt="Portfolio of Al Rajhi Saidal, researcher">
+              <button class="portfolio-view-button" type="button">View larger</button>
+            </div>
+          </article>
+
+          <article class="team-portfolio-slide" aria-hidden="true">
+            <div class="team-portfolio-copy">
+              <span class="team-portfolio-number">05 / 05</span>
+              <h2>Azel Acosta</h2>
+              <p class="team-portfolio-role">Coder</p>
+
+            </div>
+            <div class="team-portfolio-image-wrap">
+              <img src="az.png" alt="Portfolio of Azel Acosta, coder">
+              <button class="portfolio-view-button" type="button">View larger</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <button class="team-portfolio-btn portfolio-next" type="button" aria-label="Next team portfolio">&#10095;</button>
+    </div>
+
+    <div class="team-portfolio-dots" aria-label="Choose a team portfolio">
+      <button class="team-portfolio-dot active" type="button" aria-label="Show Nisha De Luna portfolio"
+        aria-current="true"></button>
+      <button class="team-portfolio-dot" type="button" aria-label="Show Ralph Axel Sagun portfolio"></button>
+      <button class="team-portfolio-dot" type="button" aria-label="Show Daryn Ann Bofill portfolio"></button>
+      <button class="team-portfolio-dot" type="button" aria-label="Show Al Rajhi Saidal portfolio"></button>
+      <button class="team-portfolio-dot" type="button" aria-label="Show Azel Acosta portfolio"></button>
+    </div>
+  </section>
+
+  <div class="portfolio-lightbox" id="portfolioLightbox" hidden>
+    <div class="portfolio-lightbox-backdrop" data-close-portfolio></div>
+    <div class="portfolio-lightbox-content" role="dialog" aria-modal="true" aria-labelledby="portfolioLightboxTitle">
+      <button class="portfolio-lightbox-close" type="button" aria-label="Close enlarged portfolio">&times;</button>
+      <h2 id="portfolioLightboxTitle">Portfolio preview</h2>
+      <img class="portfolio-lightbox-image" src="" alt="">
+    </div>
+  </div>
+
+
+  <section class="method" id="methodology">
+    <div class="method-header">
+      <span>RESEARCH JOURNEY / METHODOLOGY</span>
+      <h1>How We Arrived at Our Final Content</h1>
+    </div>
+
+    <div class="research-grid">
+      <article class="research-card research-intro">
+        <div class="research-card-top"><span class="research-number">01</span><span
+            class="research-contributor">RAJHI</span></div>
+        <h2>What Is Streaming?</h2>
+        <p>Streaming is a way of watching videos, listening to music, or viewing other content through the internet
+          without downloading the whole file. It allows people to watch or listen right away, making it easier and
+          faster to access content.</p>
+      </article>
+
+      <article class="research-card research-wide">
+        <div class="research-card-top"><span class="research-number">02</span><span
+            class="research-contributor">RALPH</span></div>
+        <h2>Comparison of Platforms and Type of Streaming Content</h2>
+        <p class="ralph-summary">After comparing Twitch, Facebook, and YouTube, our group chose YouTube because it
+          provides a simple and accessible platform for viewing and sharing different types of video content. Aside
+          from how familiar our experience is with YouTube, it is compatible with various devices, including phones,
+          tablets, laptops, and computers, making it convenient for users to discover more of our content! It also has
+          an organized interface with features such as search, subscriptions, notifications, and recommendations that
+          help users easily find content that interests them. Additionally, YouTube supports high video quality, from
+          144p up to 4K and 8K on supported videos, along with high-quality audio. This is why YouTube is a suitable
+          platform for our project because it is accessible, easy to navigate, and designed specifically for video
+          content.
+          <br><br>
+          Moving forward to the types of streaming content. Based on our research, there are lots of content types such
+          as video game walkthroughs, how-to guides and tutorials, and educational streams. For this project, we set
+          our minds on how-to guides and tutorials. Tutorials are instructional videos that provide viewers with clear,
+          step-by-step guidance on how to complete a task or learn a practical skill. This type of content lets viewers
+          follow along at their own pace and apply what they have learned. Our brainstorming process was to focus on
+          JavaScript, since our group was also learning about the elements of JavaScript syntax.
+        </p>
+        <div class="research-choice">
+          <span>OUR CONTENT CHOICE</span>
+          <strong>How-to Guides &amp; Tutorials</strong>
+        </div>
+        <div class="platform-choice">
+          <div class="target-lock" aria-hidden="true"><span></span></div>
+          <div>
+            <span>OUR PLATFORM CHOICE</span>
+            <strong>YouTube</strong>
+            <p>Our group chose YouTube because it is accessible, easy to navigate, compatible with different devices,
+              and designed specifically for video content.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-card-top"><span class="research-number">03</span><span
+            class="research-contributor">RALPH</span></div>
+        <h2>Audience Analysis</h2>
+        <div class="audience-flow">
+          <div><span>Audience</span><strong>Teenagers and young adults; K–12 and college students; and lifelong
+              learners</strong></div>
+          <b>→</b>
+          <div><span>Finding</span><strong>Both male and female viewers watch how-to guides and tutorials</strong></div>
+          <b>→</b>
+          <div class="flow-decision"><span>Decision</span><strong>How-to guides and tutorials</strong></div>
+        </div>
+        <p class="card-note">Educational videos reach a broad group of learners. Gaming walkthroughs primarily appeal to
+          younger audiences and are especially open to all ages. Based on these differences, we chose how-to guides and
+          tutorials because <strong>RADAN</strong> relates to watching streams to meet learning needs, and we wanted to
+          explore how
+          unique tutorial videos can get.</p>
+      </article>
+
+      <article class="research-card">
+        <div class="research-card-top"><span class="research-number">04</span><span
+            class="research-contributor">NISHA</span></div>
+        <h2>Viewer Needs</h2>
+        <p>The survey shows that the main audience is teenagers and Junior High School students aged 13–18. Most viewers
+          watch educational or tutorial content several times a week to understand difficult topics, complete
+          schoolwork,
+          learn new skills, and satisfy their curiosity.</p>
+        <div class="tag-grid">
+          <span>Clear</span><span>Easy to follow</span><span>Engaging</span><span>Simple and
+            understandable</span><span>Visual
+            demonstrations</span><span>Helpful examples</span>
+        </div>
+      </article>
+
+      <article class="research-card research-wide">
+        <div class="research-card-top"><span class="research-number">05</span><span
+            class="research-contributor">DARYN</span></div>
+        <h2>Characteristics of a Good Stream</h2>
+        <div class="characteristics-grid">
+          <span>✓ Informative</span><span>✓ Entertaining</span><span>✓ Engaging</span><span>✓ Respectful</span><span>✓
+            Accessible</span><span>✓ Clear audio and video quality</span><span>✓ Excellent pacing between
+            timestamps</span><span>✓
+            Understandable narration</span><span>✓ Lively storytelling</span><span>✓ Creative, bright, and
+            eye-catching</span><span>✓
+            Active audience interaction</span><span>✓ Reliable information</span><span>✓ Useful for citations</span>
+        </div>
+        <br><br>
+        <p class="characteristics-summary">In summary, our group identified that a good stream must be informative,
+          entertaining, engaging, and respectful. The stream must be accessible, have clear audio and video quality,
+          excellent pacing between timestamps, and understandable narration or lively storytelling. The streamer should
+          come up with creative, bright, and eye-catching content ideas while staying active in interacting with the
+          audience. For the titles of a stream, they could be very interesting or intriguing yet also honest and not
+          gullible as the viewer clicks on the stream they would like to watch. Most importantly, our group believes
+          that
+          information being stated could be counted as reliable, and could as well be useful for using citations.</p>
+      </article>
+
+      <article class="research-card research-wide platform-card">
+        <div class="research-card-top"><span class="research-number">06</span><span
+            class="research-contributor">RALPH</span></div>
+        <h2>Platform Comparison</h2>
+        <div class="platform-flow">
+          <div class="platform-options"><span>Twitch</span><span>Facebook</span><span
+              class="platform-selected">YouTube</span></div>
+          <b>→</b>
+          <div class="platform-label">Platform comparison</div>
+          <b>→</b>
+          <div class="platform-result">YouTube selected</div>
+        </div>
+        <ul class="research-bullets platform-reasons">
+          <li>Familiar through our group's experience with YouTube</li>
+          <li>Works across phones, tablets, laptops, and computers</li>
+          <li>Organized interface with search, subscriptions, notifications, and recommendations</li>
+          <li>Supports high-quality video and audio and is designed around video content</li>
+        </ul>
+
+    </div>
+    </div>
+    </article>
+    </div>
+
+    <div class="method-final">
+      <span>FINAL RESEARCH JOURNEY</span>
+      <h2>How We Arrived at Our Final Content</h2>
+      <div class="final-journey">
+        <div>Research</div><span>→</span>
+        <div>Explored streaming content</div><span>→</span>
+        <div>Analyzed our audience</div><span>→</span>
+        <div>Identified viewer needs</div><span>→</span>
+        <div>Defined effective stream characteristics</div><span>→</span>
+        <div>Compared platforms</div>
+      </div>
+      <div class="final-decision">
+        <div><small>FINAL CONTENT TYPE CHOSEN</small><strong>How-to Guides &amp; Tutorials</strong></div>
+        <div><small>FINAL PLATFORM CHOSEN</small><strong>YouTube</strong></div>
+      </div>
+      <p class="final-decision-summary">Our group planned several steps to develop our ideas until we arrived at the
+        final content that everyone fully agreed on. First, we researched common and possible types of streaming
+        content. Then, we compared the features, advantages, and disadvantages of each type and analyzed its potential
+        audience. After that, we chose a content type based on our members' preferences, attitudes, beliefs,
+        perspectives, ideas, and needs. Once the content type was settled, we compared the most convenient and
+        accessible platforms that all group members were familiar with. We refined our options by organizing and
+        considering the full range of propositions and concepts. In conclusion, we chose our final content and platform
+        based on our discoveries.</p>
+    </div>
+  </section>
+
+
+
+  <footer id="contact">
+    <div class="footer">
+      <div class="footer-copy">
+        <span>STAY CONNECTED</span>
+        <h2>Contact Our Team</h2>
+        <p>Have a question about our streaming research or tutorial content? Reach out to RADAN.</p>
+      </div>
+      <div class="footer-contact-card">
+        <span>EMAIL</span>
+        <a href="mailto:info@team5.com">info@team5.com</a>
+        <a class="footer-contact-button" href="mailto:info@team5.com">Send us a message</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
